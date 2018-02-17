@@ -1,6 +1,9 @@
 function Mostrar()
 {
-	//Genero el número RANDOM entre 1 y 10 
-	
-
+	var random
+	var suma
+	random=Math.floor(Math.random);
+	random=parseInt(random);
+	suma=Math.random * 11 - 1 + 11;
+	alert ("su numero es... " + suma);
 }//FIN DE LA FUNCIÓN
