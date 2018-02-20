@@ -11,21 +11,49 @@ var numeroSecreto;
 var contadorIntentos;
 
 function comenzar()
-{
-  numeroSecreto= Math.floor(Math.random(101)* (101 - 1) + 101);
-  console.log (numeroSecreto);
-}
-   
-
-
+{ 
+  
+  var numeroSecreto= Math.floor(Math.random()* 101 - 1) +1;    
+  var contadorIntentos= 0;
+  }
 
 function verificar()
-{
-	  numeroSecreto= document.getElementById("numero").value;
-    if (numero)
-    contadorIntentos= 1;
-    contadorIntentos= contador += 1;
+{   
+    var ganador;
 
+    ganador=document.getElementById("numero").value;
 
-	
+    contadorIntentos= document.getElementById("intentos").value ;
+
+    contadorIntentos = contadorIntentos+1;
+
+    if (ganador == numeroSecreto)
+       {
+      alert ("GANÓ!! " + "y en solo " + contadorIntentos + " intentos");
+    }
+    else if (ganador > numeroSecreto)
+    {
+      alert ("Se pasó.")
+    }
+    else if (ganador < numeroSecreto)
+    {
+      alert ("Falta...")
+    }
+
+    if (contadorIntentos > 10)
+    {
+      contadorIntentos = 1;
+    }
+
+    if (numeroSecreto = ganador)
+  {
+    numeroSecreto +1;
+  }
+  else if (numeroSecreto >100)
+  {
+    numeroSecreto -1;
+  }
+
+    
 }
+                                                                                                                                                    

@@ -1,18 +1,23 @@
 function Mostrar()
 {
-	var random
-	random=Math.floor(Math.random(11) * 11 - 10 + 10 );
-	if (random>=9)
+	var random = 1
+	random=Math.floor(Math.random() * 11 - 10 )+10;
+	if (random==9&&10)
+
 	
+
 	{
-		alert ("la nota es 9 Excelente");
+		alert ("Su nota es excelente.")
 	}
-	else if	(random<=9)
-	
+	else if (random>=4)
 	{
-		alert ("Muy bien"); }
+		alert ("Su nota mayor a 4, aprobó")
+
+}	
+	else if (random<=3)
+{
+	alert ("Usted está desaprobado.")
 }
-	else if (random<=6)
-	{
-		alert ("Bien");
-	}
+
+
+}

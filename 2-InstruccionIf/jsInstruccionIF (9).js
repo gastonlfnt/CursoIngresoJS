@@ -1,9 +1,6 @@
 function Mostrar()
 {
-	var random
-	var suma
-	random=Math.floor(Math.random);
-	random=parseInt(random);
-	suma=Math.random * 11 - 1 + 11;
-	alert ("su numero es... " + suma);
+	var numero = 0;
+	numero= Math.floor (Math.random()*101-100) +100;
+	alert ("el numero es... " + numero);
 }//FIN DE LA FUNCIÓN
