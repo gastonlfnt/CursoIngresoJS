@@ -13,9 +13,13 @@ function ComenzarIngreso ()
     var sexo = document.getElementById("Sexo").value;
     var estadoCivil = document.getElementById("EstadoCivil").value;
     var sueldoBruto = document.getElementById("Sueldo").value
-    var numeroDeLegajo;
+    var numeroDeLegajo = document.getElementById("Legajo").value;
     var nacionalidad;
-  {  edad= prompt ("Ingrese su edad " )
+
+
+
+  {  
+      edad= prompt ("Ingrese su edad " )
   //INGRESO DE EDAD// 
      
      do 
@@ -93,12 +97,15 @@ function ComenzarIngreso ()
       sueldoBruto = prompt ("Ingrese Su Sueldo Bruto");
         
         while (sueldoBruto>8000)
+        var contador = 0
         console.log (sueldoBruto);{
             
         if (sueldoBruto>=8000)
 
         {
             alert ("Su sueldo es. " + sueldoBruto)
+            contador = sueldoBruto + 1;
+
         }
 
         else
@@ -106,6 +113,24 @@ function ComenzarIngreso ()
          alert ("Su sueldo es menor al permitido.")   
         }
 
+        numeroDeLegajo = prompt ("Ingrese su número de legajo") 
+        while (numeroDeLegajo>=1111)
+
+       if (numeroDeLegajo=>1111) {
+
+           alert ("Su número de legajo es...")
+
+        }
+
+        else (numeroDeLegajo<1111)
+
+        {
+
+            alert ("Su número de legajo es invalido.")
+
+        }
+
+        
     
 }
 }
