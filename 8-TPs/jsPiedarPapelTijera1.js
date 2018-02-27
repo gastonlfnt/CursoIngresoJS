@@ -10,7 +10,6 @@ function comenzar()
 {
 	
 
-
 }//FIN DE LA FUNCIÓN
 function piedra()
 {

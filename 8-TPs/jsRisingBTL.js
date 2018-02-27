@@ -14,18 +14,20 @@ function ComenzarIngreso ()
     var estadoCivil = document.getElementById("EstadoCivil").value;
     var sueldoBruto = document.getElementById("Sueldo").value
     var numeroDeLegajo = document.getElementById("Legajo").value;
-    var nacionalidad;
+    var nacionalidad= document.getElementById("Nacionalidad").value;
 
 
 
   {  
       edad= prompt ("Ingrese su edad " )
+      var contador =+ edad;
   //INGRESO DE EDAD// 
      
      do 
       {
          console.log (edad)
          alert ("Su edad es " + edad)
+         contador=+ 1;
 
          break;
          //SI CUMPLE LOS REQUISITOS, SIGUE.//
@@ -72,8 +74,8 @@ function ComenzarIngreso ()
     var estadoCivil=document.getElementById("EstadoCivil").value; 
     console.log (estadoCivil)
     estadoCivil= prompt ("ESTADO CIVIL 1-SOLTERO, 2- CASADO, 3-DIVORCIADO, 4-VIUDO."); 
-    switch (estadoCivil) 
-   {   
+    switch (estadoCivil)
+   {   //al ejecutar un numero me devuelve el mensaje correspondiente al numero.//
 
        case "1":
        alert ("Su Estado Civil : SOLTERO");
@@ -122,13 +124,31 @@ function ComenzarIngreso ()
 
         }
 
-        else (numeroDeLegajo<1111)
+        else if (numeroDeLegajo<1111)
 
         {
 
             alert ("Su número de legajo es invalido.")
 
         }
+
+        var nacionalidad = document.getElementById("Nacionalidad").value;
+        nacionalidad = prompt ("Ingrese A para Argentino, E para Extranjero, N para nacionalizado");
+        console.log (naci)  
+        switch (nacionalidad)
+        
+         {
+            case "A":
+              alert  ("Usted es argentino");
+                break;
+        
+            case "E":
+                alert ("Usted es Extranjero");
+            break;
+            
+            case "N":
+                alert ("Usted està nacionalizado")
+                break;        }
 
         
     
